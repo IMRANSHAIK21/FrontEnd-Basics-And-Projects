@@ -1,0 +1,13 @@
+/* element Selector */
+h1{
+    background-color: green;
+    font-size: large;
+}
+
+/* Id selector */
+#id{
+    background-color: yellow;
+}
+.class{
+    background-color: pink;
+}

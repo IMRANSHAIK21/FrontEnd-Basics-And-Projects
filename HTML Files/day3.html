@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+
+<body>
+    <!-- HTML Forms-->
+    <!-- It is a kind of structure to collect the data from the user-->
+    <!-- Tags: form, input, label-->
+    <form>
+        <label for="email">Enter Email Id:</label>
+        <input type="text" id="email"><br>
+        <label for="password">Password</label>
+        <input type="text" id="password">
+        <br>
+        <br>
+        <input type="button" value="Click here">
+    </form>
+
+    <br>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Date Picker</legend>
+            <label for="datepicker">Choose Data:</label>
+            <input type="date" id="datepicker">
+        </fieldset>
+
+        <fieldset>
+            <select name="dishes">
+                <option>Fish</option>
+                <option>Chicken</option>
+                <option>Mutton</option>
+            </select>
+            <label for="textArea">Text Area</label><br>
+            <textarea name="textArea" id="textArea1" cols="10" rows="10"></textarea>
+
+        </fieldset>
+
+        <button>I am button</button><br>
+    </form>
+
+
+    <!-- Excercise 1-->
+    <!-- Event Registration-->
+    <h2>Event Registration</h2>
+    <form>
+        <fieldset>
+            <legend>User Info</legend>
+            <label for="username">Name:</label><br>
+            <input type="text" name="username" id="username"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" id="phone"><br>
+            <label for="occupation">Occupation:</label><br>
+            <select id="occupation" size="1">
+                <option>Other</option>
+                <option value="softwareEngineer">SF</option>
+                <option value="hardwareEngineer">HW</option>
+                <option value="ITEngineer">IT</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Topics Of Interest</legend>
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="html" value="html"><br>
+            <label for="css">CSS</label><br>
+            <input type="checkbox" value="css" id="css"><br>
+            <label for="javascript">Javascript</label><br>
+            <input type="checkbox" value="javascript" id="javascript"><br>
+        </fieldset>
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments" cols="30" rows="10">Enter Comments</textarea>
+        <input type="button" value="Register">
+    </form>
+
+    <!-- Here  am not using name attribute in input(recommended to use)-->
+    <form action="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone"><br>
+        <label for="resume">Resume:</label><br>
+        <input type="file" id="resume"><br>
+        <label for="experience">Experience(in years)</label><br>
+        <input type="number" id="experience" min="1" max="100"><br>
+        <label for="html">Html</label><br>
+        <input type="checkbox" name="html"><br>
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="css"><br>
+        <label for="javascript">Javascript</label><br>
+        <input type="checkbox"><br>
+        <label for="fulltime">Full Time</label><br>
+        <input type="radio" name="availability" value="fulltime" id="fulltime"><br>
+        <label for="parttime">Part-time</label><br>
+        <input type="radio" name="availability" value="parttime" id="parttime"><br>
+    </form>
+</body>
+
+</html>

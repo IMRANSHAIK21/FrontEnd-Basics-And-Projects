@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+</head>
+<body>
+    <!-- Block  vs Inline-->
+    <!-- Block elements will take whole width and always starts in a new line-->
+    <!-- Ex: p, h1..h6, section, ul, ol, div etc-->
+    <!-- Here div means division used to wrap the content-->
+    <div>
+        <h1>Hello</h1>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+        </ul>
+    </div>
+
+    <!-- Inline Element only take space accroding to content-->
+    <!-- Span is used to add the content in a line without creating a new line -->
+    <!-- Most of the formatting tags are inline elements and a,img etc also-->
+    <span>Hello Brother this is Inline</span>
+
+    <!-- Variations of Anchor tag-->
+    <a href="https://www.google.com/">Google</a>
+    <a href="mailto:<youremailId>">gmail</a>
+    <a href="tel:<yourNumber>">Contact</a>
+
+    <!-- Tables in Depth with Practice-->
+    <!-- Table means arraging the data in a structure of row and columns-->
+    <!-- Tags Available: table, th, tr, td, thead, tbody, tfoot  -->
+    <!-- Attributes: colspan, rowspan-->
+    <!-- Table 1-->
+    <table border="1px">
+        <thead>
+            <th>Student Id</th>
+            <th>Student name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Nice</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Jhon</td>
+                <td>Male</td>
+                <td rowspan="3">23</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bass</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td colspan="3">Colspan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <!-- Table 2-->
+    <table border="1px">
+        <tr>
+            <td>Coloum 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row1 Cell1</td>
+            <td>Row1 Cell2</td>
+            <td>Row1 Cell3</td>
+        </tr>
+        <tr>
+            <td>Row2 Cell2</td>
+            <td>Row2 Cell3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row3 Cell1</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <!-- Table 3-->
+    <table border="1">
+        <thead>
+            <th>No.</th>
+            <th>FullName</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>1000$</td>
+                <td rowspan="4">Company Founder </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>1200$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>1100$</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark</td>
+                <td>Founder FB</td>
+                <td>1300$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expenses:</td>
+                <td>4600$</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <br>
+    <br>
+    <!-- Table 4-->
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>NewStreet</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>300</td>
+                <td>288</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivandrum</td>
+                <td>Guru Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharastra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>Krishna Street</td>
+                <td>700</td>
+                <td>850</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Billa Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alask</td>
+                <td rowspan="2">AKA Central</td>
+                <td>New Street</td>
+                <td>200</td>
+                <td>210</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Cross Street</td>
+                <td>1000</td>
+                <td>1050</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <!-- Table 5-->
+    rows 9 col 4
+
+    <table border="1">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m</td>
+            <td rowspan="2">5:00 p.m</td>
+            <td>Intruduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m</td>
+            <td>2:00 p.m</td>
+            <td rowspan="2">XSl Tranformation</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+
+</body>
+</html>

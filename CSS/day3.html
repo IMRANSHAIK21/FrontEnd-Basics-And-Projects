@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .container {
+            height: 500px;
+            width: 500px;
+        } */
+
+        /* div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid aqua;
+            margin: 10px;
+            display: inline-block;
+        } */
+
+
+
+        /* 
+
+        .div3 {
+            position: absolute;
+            top: 100px;
+        }
+
+        .div5 {
+            position: relative;
+            border: 1px solid green;
+            top: 0;
+        }
+
+        .div7 {
+            position: absolute;
+            top: 30px
+        } */
+
+        /* .box {
+            width: 100%;
+            height: 100%;
+        } */
+
+        /* Relative Units: %, vh(view port height), vw(view port height),em,rem  */
+        /* .parent {
+            border: 2px solid red;
+            background-color: antiquewhite;
+        }
+
+        .child {
+            border: 2px solid black;
+            background-color: aqua;
+            width: 50%;
+        }
+
+        /* Absolute width, px*/
+        /* .wrapper {
+            font-size: 10px;
+            padding-top: 10px;
+        }
+
+        .w1 {
+
+            font-size: 10em;
+            padding-top: 10em;
+        } */
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+            clear: right;
+        }
+
+        .overflow {
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            overflow: scroll;
+        }
+
+        p {
+            overflow: scroll;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About Position Property</h1>
+    <div class="container">
+        <div class="div1">ABCD</div>
+        <div class="div2">EFGH</div>
+        <div class="div3">IJKL</div>
+        <div class="div4">MNOP</div>
+
+    </div>
+    <div class="container">
+        <div class="div5">ABCD</div>
+        <div class="div6">EFGH</div>
+        <div class="div7">IJKL</div>
+        <div class="div8">MNOP</div>
+
+    </div>
+
+    <h1 class="">About the Size Units</h1>
+    <div class="box">
+        Welcome Home
+    </div>
+
+    <div class="parent">
+        <div class="child">Child</div>
+    </div>
+
+    <div class="wrapper">
+        <div class="w1">
+            Welcome to CSS
+        </div>
+    </div>
+
+    <div class="float">
+        <img class="img1" src="https://static.pexels.com/photos/36753/flower-purple-lical-blosso.jpg" alt=""
+            width="100px" height="100px">
+        <img class="img2" src="https://static.pexels.com/photos/36753/flower-purple-lical-blosso.jpg" alt=""
+            width="100px" height="100px">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+
+    </div>
+
+    <div class="overflow">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit dolorem, iste modi sunt iusto atque,
+            laboriosam quaerat labore saepe, necessitatibus qui esse architecto explicabo corrupti. In exercitationem
+            cupiditate alias debitis voluptatum ab laboriosam facere! Eligendi eum minus deserunt voluptate velit
+            accusantium temporibus ipsam provident saepe! Nihil debitis accusamus iusto!</p>
+
+    </div>
+
+</body>
+
+</html>

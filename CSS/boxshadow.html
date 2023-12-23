@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        h1 {
+            color: green;
+            text-shadow: 3px 3px red,
+                6px 6px blue,
+                12px 12px green;
+
+
+        }
+
+        .container {
+            --statuscolor: rgb(25, 170, 37);
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: aqua;
+            box-shadow: 10px 10px 100px 10px var(--statuscolor);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- showing shadow for the content -->
+    <h1>Hello Bro</h1>
+
+    <div class="container"></div>
+</body>
+
+</html>

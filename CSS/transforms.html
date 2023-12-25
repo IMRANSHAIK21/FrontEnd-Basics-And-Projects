@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transforms</title>
+
+    <!-- 
+        Let's break down the difference between transitions and transforms with a simple example.
+
+        Transitions:
+
+            Purpose: Used for making smooth changes when a property of an element transitions from one state to another.
+            Example: Imagine a button. When you hover over it, the color changes gradually and smoothly.
+                
+        Transforms:
+
+            Purpose: Used for applying changes to the geometric properties of an element, such as its position, size, or rotation.
+            Example: Consider an image. When you click on it, it smoothly grows in size.
+
+    -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: palegoldenrod;
+            border: 2px solid black;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(30deg); */
+            /* 1 turn = 360deg */
+            /* transform: rotate(0.5turn); */
+            /* increase the size by mentioned number of times */
+            /* 1 is default */
+            /* transform: scale(2);
+            transform: scale(0.5); */
+            /* Skew is used to tilt the content  */
+            /* diff rotate and skew */
+            /* rotate don't change the shape, skew changes the shapes */
+            /* transform: skew(10deg); */
+            /* translate to change the position */
+            /*                   x-axis,y-axis */
+            /* transform: translate(40px, 500px); */
+            transition: all;
+
+        }
+
+        .box:hover {
+            color: red;
+            background-color: yellow;
+            transform: scale(1.3) rotate(30deg) translate(30px, 500px);
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <p>Hello</p>
+    </div>
+</body>
+
+</html>

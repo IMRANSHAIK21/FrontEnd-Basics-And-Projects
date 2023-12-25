@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vw;
+            background-color: palegoldenrod;
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 350px;
+            height: 50px;
+            border: 2px solid green;
+            background-color: yellow;
+            border-radius: 100px;
+            margin: 10px;
+            font-size: 20px;
+            color: black;
+            position: relative;
+            animation-name: movement;
+            animation-duration: 2s;
+            /* animation-delay: 1s; */
+            animation-timing-function: linear;
+            animation-timing-function: ease;
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            animation: 1s linear 1s infinite alternate both running movement;
+
+        }
+
+        @keyframes movement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 100%;
+            }
+        }
+
+        .box1 {
+            width: 350px;
+            height: 50px;
+            border: 2px solid green;
+            background-color: red;
+            border-radius: 100px;
+            margin: 10px;
+            font-size: 20px;
+            color: black;
+            position: relative;
+            animation-name: movement;
+            animation-duration: 2s;
+            /* animation-delay: 1s; */
+            animation-timing-function: linear;
+            animation-timing-function: ease;
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            animation: 1s linear 1s infinite alternate-reverse both running bottommovement;
+
+        }
+
+        @keyframes bottommovement {
+            from {
+                top: 500px;
+                left: 0;
+            }
+
+            to {
+                top: 500px;
+                left: 100%;
+            }
+        }
+
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border: 2px solid green;
+            background-color: rgb(41, 162, 218);
+            border-radius: 50%;
+            margin: 10px;
+            font-size: 20px;
+            color: black;
+            position: relative;
+            /* animation-name: movement;
+            animation-duration: 2s;
+            /* animation-delay: 1s; */
+            /* animation-timing-function: linear;
+            animation-timing-function: ease; */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            animation: 1s linear 1s 1 alternate both running circleMovement;
+
+        }
+
+        @keyframes circleMovement {
+            0% {
+                top: 1%;
+                left: 5%;
+            }
+
+            30% {
+                top: 5%;
+                left: 40%;
+            }
+
+            60% {
+                top: 1%;
+                left: 90%;
+            }
+
+            100% {
+                top: 40%;
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+        <div class="circle">
+        </div>
+        <div class="box1">
+        </div>
+    </div>
+</body>
+
+</html>

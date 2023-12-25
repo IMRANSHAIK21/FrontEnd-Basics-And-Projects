@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <!-- Transitions:
+
+Used for making smooth changes when something happens (like hovering over a button).
+Typically involves a gradual shift in one or a few properties (e.g., color or size).
+Controlled by specifying the duration and the property being transitioned.
+Animations:
+
+Used for more dynamic and complex effects, like spinners or bouncing elements.
+Involves a series of keyframes that define the style at different points during the animation.
+Can affect multiple properties simultaneously and offers more control over the overall visual behavior.
+Suitable for both simple and intricate visual changes. -->
+    <style>
+        .container {
+            height: 50px;
+            width: 100px;
+            background-color: aqua;
+            border: 3px solid black;
+            /* transition-property: width; apply style on width */
+            /* transition on all properties */
+            /* without giving the property transition will not be smooth */
+            transition-property: all;
+            transition-duration: 5s;
+            transition-delay: unset;
+            transition-timing-function: linear;
+            /* short hand notation */
+            /* property name | duration | easing function | delay */
+        }
+
+        /* transitions works only when we give some action like hover, click, etc */
+        .container:hover {
+            width: 1000px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>

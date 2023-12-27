@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(201, 253, 236);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+.item{
+    border: 3px solid black;
+
+
+}
+.i1{
+    background-color: orangered;
+}
+.i2{
+    background-color:orange ;
+}
+.i3{
+    background-color: lightcoral;
+}
+ .i4{
+    background-color: green;
+} 
+.i5{
+    background-color: lightgreen;
+} 
+.i6{
+    background-color: lightseagreen;
+}

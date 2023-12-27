@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Transforms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            background-color: antiquewhite;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(146, 146, 245);
+            border: 1px solid black;
+
+        }
+
+        .rx:hover {
+            transform: rotateX(45deg);
+        }
+
+        .ry:hover {
+            transform: rotateY(45deg);
+        }
+
+        .rz:hover {
+            transform: rotateZ(45deg);
+        }
+
+        .tx:hover {
+
+            transform: TranslateX(30px);
+        }
+
+        .ty:hover {
+            transform: TranslateY(30px);
+        }
+
+        .tz:hover {
+            /* transform-style: preserve-3d; */
+            /* we need to set persepctive to use the Z axis in translate,scale and skew   */
+            transform: perspective(300px) translateZ(30px);
+        }
+
+        .sx:hover {
+
+            transform: ScaleX(1.5);
+        }
+
+        .sy:hover {
+            transform: scaleY(1.3);
+        }
+
+        .sz:hover {
+            /* transform-style: preserve-3d; */
+            /* we need to set persepctive to use the Z axis in translate,scale and skew   */
+            /* to see the affect of scaleZ we need to use translateZ */
+            transform: perspective(400px) scaleZ(10) translateZ(30px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item rx">RotateX</div>
+        <div class="item ry">RotateY</div>
+        <div class="item rz">RotateZ</div>
+        <div class="item tx">TranslateX</div>
+        <div class="item ty">TranslateY</div>
+        <div class="item tz">TranslateZ</div>
+        <div class="item sx">ScaleX</div>
+        <div class="item sy">ScaleY</div>
+        <div class="item sz">ScaleZ</div>
+    </div>
+
+</body>
+
+</html>

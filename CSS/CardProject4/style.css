@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(223, 203, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 1rem;
+    border-style: dotted solid double dashed;
+}
+.image{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}

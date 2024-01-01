@@ -1,0 +1,1 @@
+console.log("Concepts of DOM and Some JS")

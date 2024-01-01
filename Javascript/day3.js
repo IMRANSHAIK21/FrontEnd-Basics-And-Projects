@@ -221,4 +221,27 @@ let mappedArray = n.map(num=>{
 
 console.log(mappedArray);
 // maps for objects
-let arrayObject = 
+let arrayObject = n.filter(v=> v<=0).map(()=>{number:v})
+console.log(arrayObject)
+
+//Reducing arrays
+// to reduce an array and make some value by reducing that array
+// syntax: array.reduce(callbackfucntion(accumulato, current vaue), accumulatorInitializeValue)
+// our array
+let arrr = [1,2,3,4,5];
+Array.isArray()
+
+// lets see in loop first
+let total = 0;
+for(let value of arrr){
+    total = total + value;
+}
+console.log("total value using for loop",total)
+//now using reduce
+// here accumulator is like "total" as in the above example and 0 is the initialization for that
+// first we are initializing accumulator by "0" as we done for total
+// now we will be storing total value in the accumulator variable
+// if we don't give accumulator or current value
+// then accumulator initilized with first value and current value starts with second value
+let totalvalue = arrr.reduce((accumulator,currentValue)=> accumulator + currentValue, 0);
+console.log("Total value using reduce : ", totalvalue);
